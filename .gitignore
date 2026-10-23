@@ -11,6 +11,9 @@ npm-debug.log*
 .env
 .env.*
 
+# Local tool state
+.mimosa/
+
 # Test artifacts
 coverage/
 *.lcov
