@@ -1,0 +1,16 @@
+{
+  "name": "notion",
+  "version": "0.1.0",
+  "description": "Notion integration: complete REST API client (all 2026-03-11 endpoints), an MCP server with curated + raw-request tools, and skills for connection setup, database queries, and content authoring.",
+  "author": { "name": "marshecho" },
+  "skills": "./skills",
+  "mcpServers": {
+    "notion": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/server.mjs"],
+      "env": {
+        "NOTION_API_KEY": "${NOTION_API_KEY}"
+      }
+    }
+  }
+}
